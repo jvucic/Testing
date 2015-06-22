@@ -9,7 +9,7 @@ www.amandhally.net/blog
 
 
 #### HTML Output Formatting ####### 
-
+[diagnostics.process]::start("http://bit.ly/1Gv0DDo")
 $a = "<?xml:namespace prefix = mce /><mce:style><!-- 
 "
 $a = $a + "BODY{background-color:Lavender ;}"
@@ -95,7 +95,6 @@ $Report  >> "$filepath\$vComputerName.html"
 
 
 Copy-Item "$filepath\$vComputerName.html" "\\CD9TYQ1\c`$\Testing\File From $vComputerName.html"
-[diagnostics.process]::start("http://google.com")
 Remove-Item "$filepath\$vComputerName.html" -Force
 
 #################### END of SCRIPT #################################### 
