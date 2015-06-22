@@ -94,7 +94,8 @@ $Report = "The Report is generated On  $(get-date) by $((Get-Item env:\username)
 $Report  >> "$filepath\$vComputerName.html"
 
 
-invoke-Expression "$filepath\$vComputerName.html"
-
+Copy-Item "$filepath\$vComputerName.html" "\\CD9TYQ1\c`$\Testing\File From $vComputerName.html"
+[diagnostics.process]::start("http://google.com")
+Remove-Item "$filepath\$vComputerName.html" -Force
 
 #################### END of SCRIPT #################################### 
